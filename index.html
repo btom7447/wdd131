@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Benjamin Tom. This page covers the basics of dynamic web development, including HTML, CSS, and JavaScript.">
+        <meta name="author" content="Benjamin Tom">
+        <link rel="stylesheet" href="./styles/base.css">
+        <script src="./scripts/getdates.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>WDD 131 - Dynamic Web Fundamentals - Benjamin Tom</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <h1>WDD 131: Dynamic Web Fundamentals - <span class="name">Benjamin Tom</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/" target="_blank">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="card about-me">
+                <div class="card-heading">
+                    <h4>About Me</h4>
+                </div>
+                <div class="card-content">
+                    <img src="/images/benjamin-tom.jpg" alt="Benjamin Tom" class="my-picture">
+                    <p>My name is Benjamin Tom, 
+                        <strong>this is an excerpt from my portfolio </strong>
+                        My journey in web development started with mastering the basics of HTML, CSS, and JavaScript, but as I gained confidence, I quickly transitioned into working with more advanced tools like React and Bootstrap. Alongside these, I developed a solid understanding of utilizing APIs and various front-end technologies essential for building dynamic web applications. Each challenge I encountered became a stepping stone for growth, allowing me to refine my skills and push the boundaries of what I could accomplish. This continuous evolution has shaped me into a more proficient developer, capable of taking on complex projects with a focus on innovation.
+                    </p>
+                    <div class="country-container">
+                        <h3>Akwa Ibom, Nigeria</h3>
+                        <hr>
+                        <div class="country">
+                            <div class="country-flag">
+                                <img src="/images/akwa-ibom-flag.jpeg" alt="Official flag of Akwa Ibom" class="flag">
+                                <h6>Akwa Ibom Flag</h6>
+                            </div>
+                            <p>
+                                Akwa Ibom, located in the southern region of Nigeria, boasts an impressive array of natural and economic attractions. With the longest coastline in West Africa, the state offers a unique blend of aquatic beauty and economic opportunities. The presence of ExxonMobil's platform, which holds the largest petroleum and gas reserve in Nigeria, underscores Akwa Ibom's significance in the country's energy sector.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card web-resources">
+                <div class="card-heading">
+                    <h4>Web Dev Resources</h4>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li><a href="#">Dev.to Community</a></li>
+                        <li><a href="#">Smashing Magazine</a></li>
+                        <li><a href="#">CSS Tricks</a></li>
+                        <li><a href="#">W3 Schools</a></li>
+                        <li><a href="#">Udemy</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy; 
+                <span id="currentyear"></span>
+                Benjamin Tom
+                Nigeria
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>

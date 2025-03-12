@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --white: #fff;
+    --p-background: #745332;
+    --s-background: #4C5154;
+    --highlight: #F1C40F;
+    --black: #000;
+    --ash: #d9d9d9;
+}
+
+/* HEADER */
+header {
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--s-background);
+}
+header h6 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Figtree', sans-serif;
+    text-align: left;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul li a {
+    color: var(--white);
+}
+header ul li a:hover {
+    color: var(--highlight);
+}
+header ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--highlight);
+    transition: width 0.3s ease;
+}
+header ul li a:hover::after {
+    width: 100%;
+}
+header .user-profile {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: none;
+}
+#hamburger-menu {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+}
+.hamburger-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 0px;
+}
+main h1 {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* GRID SECTION */
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+section figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+section figure figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--black);
+    text-decoration: none;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--s-background);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--white);
+}

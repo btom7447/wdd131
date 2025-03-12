@@ -1,0 +1,61 @@
+@media screen and (max-width: 450px) {
+
+
+    :root {
+        --white: #fff;
+        --p-background: #745332;
+        --s-background: #4C5154;
+        --highlight: #F1C40F;
+        --black: #000;
+        --ash: #d9d9d9;
+    }
+
+    /* HEADER */
+    header {
+        padding: 10px 20px;
+    }
+    header nav {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        display: none; 
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: var(--white);
+    }
+    header nav ul {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+    header ul li a {
+        color: var(--black);
+    }
+    header ul li a:hover {
+        color: var(--highlight);
+    }
+    header ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: var(--highlight);
+        transition: width 0.3s ease;
+    }
+    header nav.open {
+        display: flex; 
+    }
+    /* HAMBURGER MENU */
+    #hamburger-menu {
+        display: block; 
+    }
+
+    /* MAIN */
+    main {
+        padding: 50px 20px;
+    }
+}

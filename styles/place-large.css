@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --white: #fff;
+    --orange: #f38c35;
+    --green: #047c2c;
+    --black: #000;
+    --ash: #d9d9d9;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: var(--orange);
+}
+
+
+/* HERO SECTION */
+.hero-section {
+    width: 100%;
+    height: 80dvh;
+    position: relative;
+}
+.hero-section .place-title {
+    padding: 20px 40px;
+    background-color: var(--green);
+    color: var(--white);
+    border-bottom: solid 4px var(--orange);
+}
+.hero-section .place-title h1 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+.hero-section picture {
+    width: 100%;
+    height: 100%;
+}
+.hero-section picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: solid 4px var(--orange);
+}
+.hero-section .data-box {
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    padding-top: 80px;
+    min-width: 200px;
+}
+.hero-section .data {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+.hero-section .weather {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+}
+.hero-section .data-header {
+    min-height: 60px;
+    width: 100%;
+    background-color: var(--green);
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero-section .data-header h4 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Figtree', sans-serif;
+    text-align: left;
+}
+.hero-section .data-box h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--black);
+}
+.hero-section .weather h4::after {
+    content: "⛅";
+    display: inline;
+}
+.hero-section .weather-icon {
+    display: none;
+}
+
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    background-color: var(--orange);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--white);
+}

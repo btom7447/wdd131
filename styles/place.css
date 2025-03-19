@@ -1,0 +1,58 @@
+@media screen and (max-width: 450px) {
+
+
+    :root {
+        --white: #fff;
+        --orange: #f38c35;
+        --green: #047c2c;
+        --black: #000;
+        --ash: #d9d9d9;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+    }
+    .hero-section .place-title {
+        padding: 20px;
+    }
+    .hero-section .data-box {
+        padding: 20px;
+        padding-top: 20px;
+        box-shadow: unset;
+    }
+    .hero-section .data {
+        position: unset;
+    }
+    .hero-section .weather {
+        position: unset;
+    }
+    .hero-section .data-header {
+        position: unset;
+    }
+    .hero-section .weather-icon {
+        display: inline-block;
+    }
+    .hero-section .weather h4::after {
+        display: none; 
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: var(--orange);
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24.4px;
+        color: var(--white);
+    }
+}

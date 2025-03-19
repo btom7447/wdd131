@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Benjamin Tom. This page covers the basics of dynamic web development, including HTML, CSS, and JavaScript.">
+        <meta name="author" content="Benjamin Tom">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.jpeg">
+        <link rel="stylesheet" href="./styles/place-large.css">
+        <link rel="stylesheet" href="./styles/place.css">
+        <script src="./scripts/getdates.js" defer></script>
+        <script src="./scripts/windchill.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>WDD 131 - Temple Album - Benjamin Tom</title>
+    </head>
+<body>
+    <main>
+        <section class="hero-section">
+            <div class="place-title">
+                <h1>Akwa Ibom</h1>
+            </div>
+            <picture>
+                <source srcset="./images/akwa-ibom-hero.webp" media="(min-width: 1024px)">
+                <source srcset="./images/akwa-ibom-hero-two.webp" media="(min-width: 768px)">
+                <img src="./images/akwa-ibom-hero-three.webp" alt="Beautiful Akwa Ibom Culture" />
+            </picture>
+            <div class="data-box data">
+                <div class="data-header">
+                    <h4>Data</h4>
+                </div>
+                <div class="content">
+                    <h6>
+                        <strong>Area: </strong>
+                        587,041 sq km
+                    </h6>
+                    <h6>
+                        <strong>Population: </strong>
+                        27,691,018
+                    </h6>
+                    <h6>
+                        <strong>Capital: </strong>
+                        Uyo
+                    </h6>
+                    <h6>
+                        <strong>Languages: </strong>
+                        Ibibio, Annang, Efik, Oron
+                    </h6>
+                    <h6>
+                        <strong>Currency: </strong>
+                        Nigerian Naira (NGN)
+                    </h6>
+                    <h6>
+                        <strong>Time Zone: </strong>
+                        UTC + 1
+                    </h6>
+                    <h6>
+                        <strong>Calling Code: </strong>
+                        +234
+                    </h6>
+                </div>
+            </div>
+    
+            <div class="data-box weather">
+                <div class="data-header">
+                    <h4>Weather</h4>
+                    <img src="./images/weather-icon.svg" alt="weather icon" width="40" height="40" class="weather-icon">
+                </div>
+                <div class="content">
+                    <h6>
+                        <strong>Temperature: </strong>
+                        <span id="temperature"></span>
+                    </h6>
+                    <h6>
+                        <strong>Conditions: </strong>
+                        <span id="conditions"></span>
+                    </h6>
+                    <h6>
+                        <strong>Wind: </strong>
+                        <span id="wind"></span>
+                    </h6>
+                    <h6>
+                        <strong>Wind Chill: </strong>
+                        <span id="windChill"></span>
+                    </h6>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 
+            <span id="currentyear"></span>
+            Benjamin Tom
+            Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Benjamin Tom. This page covers the basics of dynamic web development, including HTML, CSS, and JavaScript.">
+        <meta name="author" content="Benjamin Tom">
+        <link rel="preload" href="./styles/filtered-temples-large.css" as="style">
+        <link rel="preload" href="./styles/filtered-temples.css" as="style">
+        <link rel="stylesheet" href="/styles/filtered-temples.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="/styles/filtered-temples-large.css" media="print" onload="this.media='all'">
+        <script src="./scripts/getdates.js" defer></script>
+        <script src="./scripts/filtered-temples.js" defer></script>
+        <script src="./scripts/hamburger.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+            rel="stylesheet" 
+            media="print" 
+            onload="this.media='all'"
+        >
+        <title>WDD 131 - Filtered Temple Album - Benjamin Tom</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <h6>Temple Album</h6>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="temples.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Old</a>
+                    </li>
+                    <li>
+                        <a href="#">New</a>
+                    </li>
+                    <li>
+                        <a href="#">Large</a>
+                    </li>
+                    <li>
+                        <a href="#">Small</a>
+                    </li>
+                </ul>
+            </nav>
+            <button id="hamburger-menu" aria-label="Toggle navigation">
+                <span class="hamburger-icon">☰</span>
+            </button>
+        </header>
+        <main>
+            <h1>Home</h1>
+            <section class="temple-container" id="filteredTempleContainer"></section>
+        </main>
+        <footer>
+            <p>
+                &copy; 
+                <span id="currentyear"></span>
+                Benjamin Tom
+                Nigeria
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

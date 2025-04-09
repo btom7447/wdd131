@@ -136,3 +136,20 @@ header h6 {
     line-height: 24.4px;
     color: var(--black);
 }
+
+/* FOOTER */
+footer {
+    background-color: var(--s-background);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--white);
+}
